@@ -1,0 +1,23 @@
+<Container version="2">
+<Name>Windrose-Server</Name>
+<Repository>windrose-server</Repository>
+<Registry/>
+<Network>host</Network>
+<MyIP/>
+<Shell>bash</Shell>
+<Privileged>false</Privileged>
+<Support>https://steamcommunity.com/app/3041230/discussions/</Support>
+<Project>https://store.steampowered.com/app/3041230/Windrose/</Project>
+<Overview>Windrose Dedicated Server - A survival adventure set in the Age of Piracy. Host your own server for you and your crew!</Overview>
+<Category>GameServers:</Category>
+<WebUI/>
+<TemplateURL/>
+<Icon>https://cdn.cloudflare.steamstatic.com/steam/apps/3041230/capsule_231x87.jpg</Icon>
+<ExtraParams>--restart unless-stopped</ExtraParams>
+<Config Name="Server Files" Target="/windrose/server" Default="/mnt/user/appdata/windrose-server/server" Mode="rw" Description="Server installation directory" Type="Path" Display="always" Required="true" Mask="false"/>
+<Config Name="Saves" Target="/windrose/server/R5/Saved" Default="/mnt/user/appdata/windrose-server/saves" Mode="rw" Description="World saves and logs" Type="Path" Display="always" Required="true" Mask="false"/>
+<Config Name="Steam User" Target="STEAM_USER" Default="" Mode="" Description="Your Steam username" Type="Variable" Display="always" Required="true" Mask="false"/>
+<Config Name="Steam Password" Target="STEAM_PASS" Default="" Mode="" Description="Your Steam password" Type="Variable" Display="always" Required="true" Mask="true"/>
+<Config Name="Server Name" Target="SERVER_NAME" Default="Windrose Server" Mode="" Description="Display name of your server" Type="Variable" Display="always" Required="false" Mask="false"/>
+<Config Name="Max Players" Target="MAX_PLAYERS" Default="4" Mode="" Description="Maximum number of players (recommended: 4)" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
