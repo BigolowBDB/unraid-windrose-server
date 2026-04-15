@@ -12,4 +12,4 @@ sleep 5
 export DISPLAY=:1
 
 cd /windrose/server
-wine R5/Binaries/Win64/WindroseServer-Win64-Shipping.exe -log
+exec wine R5/Binaries/Win64/WindroseServer-Win64-Shipping.exe -log
