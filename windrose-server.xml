@@ -3,7 +3,7 @@
   <Name>Windrose-Server</Name>
   <Repository>bigolow/windrose-server:latest</Repository>
   <Registry>https://hub.docker.com/r/bigolow/windrose-server</Registry>
-  <Network>bridge</Network>
+  <Network>host</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://steamcommunity.com/app/3041230/discussions/</Support>
