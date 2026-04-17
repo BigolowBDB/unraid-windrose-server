@@ -58,5 +58,4 @@ In Windrose: **Play → Connect to Server** → Enter your invite code
 
 ## Links
 
-- [Docker Hub](https://hub.docker.com/r/bigolow/windrose-server)
 - [Windrose on Steam](https://store.steampowered.com/app/3041230/Windrose/)
