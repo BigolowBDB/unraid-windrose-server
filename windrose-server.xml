@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Windrose-Server</Name>
+  <Name>Lappland-Windrose</Name>
   <Repository>bigolow/windrose-server:latest</Repository>
   <Registry>https://hub.docker.com/r/bigolow/windrose-server</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://steamcommunity.com/app/3041230/discussions/</Support>
   <Project>https://store.steampowered.com/app/3041230/Windrose/</Project>
-  <Overview>Windrose Dedicated Server - A survival adventure set in the Age of Piracy. Host your own server for you and your crew! Downloads and updates automatically on every start.</Overview>
+  <Overview>Windrose Dedicated Server</Overview>
   <Category>GameServers:</Category>
   <Icon>https://cdn.cloudflare.steamstatic.com/steam/apps/3041230/capsule_231x87.jpg</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <ExtraParams>--restart unless-stopped --tmpfs /tmp:exec</ExtraParams>
   <Config Name="Server Files" Target="/windrose/server" Default="/mnt/user/appdata/windrose-server/server" Mode="rw" Description="Server installation directory" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="SteamCMD Cache" Target="/windrose/steamcmd-cache" Default="/mnt/user/appdata/windrose-server/steamcmd-cache" Mode="rw" Description="Persistent SteamCMD cache for fast updates" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Saves" Target="/windrose/server/R5/Saved" Default="/mnt/user/appdata/windrose-server/saves" Mode="rw" Description="World saves and logs" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Server Name" Target="SERVER_NAME" Default="Windrose Server" Mode="" Description="Display name of your server" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Max Players" Target="MAX_PLAYERS" Default="4" Mode="" Description="Maximum number of players (recommended: 4)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Game Port TCP" Target="7777" Default="7777" Mode="tcp" Description="Windrose game port TCP" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Game Port UDP" Target="7777" Default="7777" Mode="udp" Description="Windrose game port UDP" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
+EOF
