@@ -17,4 +17,3 @@
   <Config Name="Game Port TCP" Target="7777" Default="7777" Mode="tcp" Description="Windrose game port TCP" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Game Port UDP" Target="7777" Default="7777" Mode="udp" Description="Windrose game port UDP" Type="Port" Display="always" Required="true" Mask="false"/>
 </Container>
-EOF
