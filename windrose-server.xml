@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Lappland-Windrose</Name>
+  <Name>Windrose</Name>
   <Repository>bigolow/windrose-server:latest</Repository>
   <Registry>https://hub.docker.com/r/bigolow/windrose-server</Registry>
   <Network>bridge</Network>
