@@ -29,8 +29,8 @@ https://raw.githubusercontent.com/BigolowBDB/unraid-windrose-server/main/windros
 
 ```bash
 docker run -d \
-  --name Windrose-Server \
-  --network host \
+  --name Windrose Docker \
+  --network bridge \
   --restart unless-stopped \
   -v /your/path/server:/windrose/server \
   -v /your/path/saves:/windrose/server/R5/Saved \
